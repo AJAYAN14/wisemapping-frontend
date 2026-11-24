@@ -25,10 +25,8 @@ import { QueryClient } from '@tanstack/react-query';
 import DuplicateDialog from './duplicate-dialog';
 import CreateDialog from './create-dialog';
 import HistoryDialog from './history-dialog';
-import PublishDialog from './publish-dialog';
 import InfoDialog from './info-dialog';
 import DeleteMultiselectDialog from './delete-multiselect-dialog';
-import ShareDialog from './share-dialog';
 import LabelDialog from './label-dialog';
 import { trackMindmapListAction } from '../../../utils/analytics';
 import type { Designer } from '@wisemapping/editor';
@@ -119,7 +117,6 @@ const ActionDispatcher = ({
         <HistoryDialog onClose={handleOnClose} mapId={mapId} beforeRevert={beforeRevert} />
       )}
       {action === 'import' && <ImportDialog onClose={handleOnClose} />}
-      {action === 'publish' && singleMap && <PublishDialog onClose={handleOnClose} mapId={mapId} />}
       {action === 'info' && singleMap && <InfoDialog onClose={handleOnClose} mapId={mapId} />}
       {action === 'export' && singleMap && (
         <ExportDialog
@@ -129,7 +126,6 @@ const ActionDispatcher = ({
           designer={designer}
         />
       )}
-      {action === 'share' && singleMap && <ShareDialog onClose={handleOnClose} mapId={mapId} />}
       {action === 'label' && <LabelDialog onClose={handleOnClose} mapsId={mapsId} />}
     </Suspense>
   );

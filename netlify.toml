@@ -1,0 +1,12 @@
+﻿[build]
+  command = "yarn workspace @wisemapping/webapp build"
+  publish = "packages/webapp/dist"
+
+[build.environment]
+  APP_CONFIG_TYPE = "file:prod"
+  NODE_VERSION = "24.0.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

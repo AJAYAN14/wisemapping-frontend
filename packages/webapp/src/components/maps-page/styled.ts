@@ -16,7 +16,6 @@
  */
 
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
@@ -265,19 +264,5 @@ export const ToolbarSpacer = styled('div')({
   justifyContent: 'flex-end',
   minHeight: '44px',
 });
-
-/** The help button, floating at the bottom right from tablets up. */
-export const HelpButtonBox = styled(Box)(({ theme }) => ({
-  position: 'fixed',
-  bottom: '24px',
-  right: '24px',
-  zIndex: 1000,
-  [theme.breakpoints.up('xs')]: {
-    display: 'none',
-  },
-  [theme.breakpoints.up('sm')]: {
-    display: 'block',
-  },
-}));
 
 /** The page shown when the maps can not be loaded, over a translucent veil. */

@@ -23,9 +23,7 @@ import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
-import PublicOutlinedIcon from '@mui/icons-material/PublicOutlined';
 import PrintOutlinedIcon from '@mui/icons-material/PrintOutlined';
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import LabelOutlined from '@mui/icons-material/LabelOutlined';
 import HistoryOutlined from '@mui/icons-material/HistoryOutlined';
 
@@ -140,23 +138,6 @@ const ActionChooser = (props: ActionProps): React.ReactElement => {
         <FormattedMessage id="action.print" defaultMessage="Print" />
       </MenuItem>
 
-      {role == 'owner' && (
-        <MenuItem onClick={handleOnClose('publish')}>
-          <ListItemIcon>
-            <PublicOutlinedIcon />
-          </ListItemIcon>
-          <FormattedMessage id="action.publish" defaultMessage="Publish" />
-        </MenuItem>
-      )}
-
-      {role == 'owner' && (
-        <MenuItem onClick={handleOnClose('share')}>
-          <ListItemIcon>
-            <ShareOutlinedIcon />
-          </ListItemIcon>
-          <FormattedMessage id="action.share" defaultMessage="Share" />
-        </MenuItem>
-      )}
       <Divider />
 
       <MenuItem onClick={handleOnClose('info')}>

@@ -1,4 +1,17 @@
 {
-  "type": "remote",
-  "url": "http://localhost:3000/api/restful/app/config"
+  "type": "static",
+  "config": {
+    "clientType": "supabase",
+    "apiBaseUrl": "https://fzzkxymwcambugbxfsvj.supabase.co",
+    "uiBaseUrl": "http://localhost:3000",
+    "supabaseUrl": "https://fzzkxymwcambugbxfsvj.supabase.co",
+    "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6emt4eW13Y2FtYnVnYnhmc3ZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU1ODcyMzksImV4cCI6MjA5MTE2MzIzOX0.6R-iNe5feGWvuzFOGS6BCl3V9hDj0f3VJ1UvIQLLxfg",
+    "recaptcha2Enabled": false,
+    "registrationEnabled": true,
+    "googleOauth2Enabled": false,
+    "googleOauth2Url": "",
+    "facebookOauth2Enabled": false,
+    "facebookOauth2Url": "",
+    "jwtExpirationMin": 10080
+  }
 }

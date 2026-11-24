@@ -28,11 +28,9 @@ import React, { use } from 'react';
 import { FormattedMessage } from 'react-intl';
 import AccountInfoDialog from './account-info-dialog';
 import ExitToAppOutlined from '@mui/icons-material/ExitToAppOutlined';
-import AdminPanelSettingsOutlined from '@mui/icons-material/AdminPanelSettingsOutlined';
 import { useNavigate } from 'react-router';
 import { useFetchAccount } from '../../../classes/middleware';
 import { ClientContext } from '../../../classes/provider/client-context';
-import { useAdminPermissions } from '../../../classes/hooks/useAdminPermissions';
 
 type ActionType = 'account-info' | undefined;
 const AccountMenu = (): React.ReactElement => {
@@ -60,7 +58,6 @@ const AccountMenu = (): React.ReactElement => {
   };
 
   const account = useFetchAccount();
-  const { isAdmin } = useAdminPermissions();
   return (
     <span>
       <Tooltip
@@ -98,19 +95,6 @@ const AccountMenu = (): React.ReactElement => {
           <FormattedMessage id="menu.account" defaultMessage="Account" />
         </MenuItem>
 
-        {isAdmin && (
-          <MenuItem
-            onClick={() => {
-              handleClose();
-              navigate('/c/admin');
-            }}
-          >
-            <ListItemIcon>
-              <AdminPanelSettingsOutlined fontSize="small" />
-            </ListItemIcon>
-            <FormattedMessage id="menu.admin-console" defaultMessage="Admin Console" />
-          </MenuItem>
-        )}
 
         {/* The handler is on the item itself: Enter on a focused item clicks the item. */}
         <MenuItem onClick={handleLogout}>

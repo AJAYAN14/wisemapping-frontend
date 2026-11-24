@@ -25,6 +25,7 @@ import {
   LocalStorageManager,
   MockPersistenceManager,
 } from '@wisemapping/editor';
+import SupabasePersistenceManager from '../../classes/persistence/supabase-persistence-manager';
 import type { PersistenceError, MapInfo } from '@wisemapping/editor';
 import type { EditorRenderMode } from '@wisemapping/mindplot';
 import { IntlProvider } from 'react-intl';
@@ -78,6 +79,18 @@ const buildPersistenceManagerForEditor = (
         token,
       );
     }
+
+    // Add session expiration handler ....
+    result.addErrorHandler((error: PersistenceError) => {
+      if (error.errorType === 'auth') {
+        setSessionExpired(true);
+      }
+    });
+  } else if (AppConfig.isSupabaseClient?.()) {
+    result = new SupabasePersistenceManager({
+      hid,
+      onSessionExpired: () => setSessionExpired(true),
+    });
 
     // Add session expiration handler ....
     result.addErrorHandler((error: PersistenceError) => {

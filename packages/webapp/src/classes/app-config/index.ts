@@ -18,6 +18,7 @@
 
 import Client from '../client';
 import RestClient from '../client/rest-client';
+import SupabaseClient from '../client/supabase-client';
 import AdminClient, { AdminClientInterface } from '../client/admin-client';
 import { appLogger as log } from '../../utils/logger';
 
@@ -30,11 +31,13 @@ type ConfigContainer = {
 type Config = {
   uiBaseUrl: string;
   apiBaseUrl: string;
+  supabaseUrl?: string;
+  supabaseAnonKey?: string;
   analyticsAccount?: string;
   recaptcha2Enabled: boolean;
   registrationEnabled: boolean;
   recaptcha2SiteKey?: string;
-  clientType: 'mock' | 'rest';
+  clientType: 'mock' | 'rest' | 'supabase';
   googleOauth2Url: string;
   googleOauth2Enabled: boolean;
   facebookOauth2Url: string;
@@ -147,6 +150,9 @@ class AppConfig {
 
   // The clients fall back to the mocks when the configuration has no REST API to talk to.
   private static usesMockClient(config: Config): boolean {
+    if (config.clientType === 'supabase') {
+      return false;
+    }
     return (config.clientType !== 'rest' && !!config.clientType) || !config.apiBaseUrl;
   }
 
@@ -173,6 +179,29 @@ class AppConfig {
   static isRestClient(): boolean {
     const config = this.fetchOrGetConfig();
     return config.clientType === 'rest' || !config.clientType;
+  }
+
+  static isSupabaseClient(): boolean {
+    const config = this.fetchOrGetConfig();
+    return config.clientType === 'supabase';
+  }
+
+  static getSupabaseUrl(): string | undefined {
+    const envUrl = typeof import.meta !== 'undefined' && import.meta.env?.['VITE_SUPABASE_URL'];
+    if (envUrl) {
+      return envUrl;
+    }
+    const config = this.fetchOrGetConfig();
+    return config.supabaseUrl || config.apiBaseUrl;
+  }
+
+  static getSupabaseAnonKey(): string | undefined {
+    const envKey = typeof import.meta !== 'undefined' && import.meta.env?.['VITE_SUPABASE_ANON_KEY'];
+    if (envKey) {
+      return envKey;
+    }
+    const config = this.fetchOrGetConfig();
+    return config.supabaseAnonKey;
   }
 
   static isRecaptcha2Enabled(): boolean {
@@ -247,7 +276,14 @@ class AppConfig {
 
     let result: Client | undefined;
     try {
-      if (this.isRestClient()) {
+      if (this.isSupabaseClient()) {
+        const supabaseUrl = this.getSupabaseUrl();
+        const supabaseAnonKey = this.getSupabaseAnonKey();
+        if (!supabaseUrl || !supabaseAnonKey) {
+          throw new Error('Supabase URL or Anon Key is not configured in the application configuration');
+        }
+        result = new SupabaseClient(supabaseUrl, supabaseAnonKey);
+      } else if (this.isRestClient()) {
         const apiBaseUrl = this.getApiBaseUrl();
         if (!apiBaseUrl) {
           throw new Error('API base URL is not configured');
@@ -310,6 +346,13 @@ class AppConfig {
   }
 
   static getUiBaseUrl(): string {
+    if (typeof window !== 'undefined' && window.location?.origin) {
+      const config = this.fetchOrGetConfig();
+      if (!config.uiBaseUrl || config.uiBaseUrl.includes('localhost')) {
+        return window.location.origin;
+      }
+      return config.uiBaseUrl;
+    }
     const config = this.fetchOrGetConfig();
     return config.uiBaseUrl;
   }

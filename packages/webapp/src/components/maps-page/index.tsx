@@ -20,7 +20,6 @@ import Toolbar from '@mui/material/Toolbar';
 import {
   DesktopDrawer,
   DesktopDrawerToggle,
-  HelpButtonBox,
   MobileDrawer,
   MobileDrawerToggle,
   PageAppBar,
@@ -37,7 +36,6 @@ import { Label } from '../../classes/client';
 import ActionDispatcher from './action-dispatcher';
 import { ActionType } from './action-chooser';
 import AccountMenu from './account-menu';
-import HelpMenu from './help-menu';
 import LanguageMenu from './language-menu';
 import ThemeToggleButton from '../common/theme-toggle-button';
 import AppI18n, { Locales } from '../../classes/app-i18n';
@@ -51,10 +49,7 @@ import ArrowLeft from '@mui/icons-material/NavigateBefore';
 import AddCircleTwoTone from '@mui/icons-material/AddCircleTwoTone';
 import CloudUploadTwoTone from '@mui/icons-material/CloudUploadTwoTone';
 import LabelTwoTone from '@mui/icons-material/LabelTwoTone';
-import PersonOutlineTwoTone from '@mui/icons-material/PersonOutlineTwoTone';
-import PublicTwoTone from '@mui/icons-material/PublicTwoTone';
 import ScatterPlotTwoTone from '@mui/icons-material/ScatterPlotTwoTone';
-import ShareTwoTone from '@mui/icons-material/ShareTwoTone';
 import StarTwoTone from '@mui/icons-material/StarTwoTone';
 import SmartToyTwoTone from '@mui/icons-material/SmartToyTwoTone';
 import Tooltip from '@mui/material/Tooltip';
@@ -197,37 +192,10 @@ const MapsPage = (): ReactElement => {
       ),
     },
     {
-      filter: { type: 'owned' },
-      label: intl.formatMessage({ id: 'maps.nav-onwned', defaultMessage: 'My Maps' }),
-      icon: (
-        <PersonOutlineTwoTone
-          htmlColor={getIconColor()}
-          color={getIconColor() ? undefined : 'secondary'}
-        />
-      ),
-    },
-    {
       filter: { type: 'starred' },
       label: intl.formatMessage({ id: 'maps.nav-starred', defaultMessage: 'Starred' }),
       icon: (
         <StarTwoTone htmlColor={getIconColor()} color={getIconColor() ? undefined : 'secondary'} />
-      ),
-    },
-    {
-      filter: { type: 'shared' },
-      label: intl.formatMessage({ id: 'maps.nav-shared', defaultMessage: 'Shared with me' }),
-      icon: (
-        <ShareTwoTone htmlColor={getIconColor()} color={getIconColor() ? undefined : 'secondary'} />
-      ),
-    },
-    {
-      filter: { type: 'public' },
-      label: intl.formatMessage({ id: 'maps.nav-public', defaultMessage: 'Public' }),
-      icon: (
-        <PublicTwoTone
-          htmlColor={getIconColor()}
-          color={getIconColor() ? undefined : 'secondary'}
-        />
       ),
     },
   ];
@@ -449,11 +417,6 @@ const MapsPage = (): ReactElement => {
             <MapsList filter={filter} />
           </section>
         </PageContent>
-
-        {/* Floating Help Button */}
-        <HelpButtonBox>
-          <HelpMenu />
-        </HelpButtonBox>
       </PageRoot>
       {label && labelToDelete !== undefined && (
         <LabelDeleteConfirm

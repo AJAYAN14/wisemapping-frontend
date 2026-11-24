@@ -62,11 +62,6 @@ import { useFetchAccount } from './classes/middleware';
 
 const EditorPage = React.lazy(() => import('./components/editor-page'));
 const MapsPage = React.lazy(() => import('./components/maps-page'));
-const AdminConsole = React.lazy(() => import('./components/admin-console'));
-const AdminLayout = React.lazy(() => import('./components/admin-console/layout'));
-const AccountsPage = React.lazy(() => import('./components/admin-console/accounts-page'));
-const MapsAdminPage = React.lazy(() => import('./components/admin-console/maps-page'));
-const SystemPage = React.lazy(() => import('./components/admin-console/system-page'));
 
 const PageEditorWrapper = ({ mode }: { mode: PageModeType }) => {
   const id = useParams()['id'];
@@ -116,17 +111,6 @@ const IntlProviderWrapper = ({ children }: { children: React.ReactNode }): React
   const locale = AppI18n.getUserLocale(account?.locale);
   const intlLocale = useLocaleMessages(locale.code);
 
-  // Trigger an auto-ads refresh on every SPA route change so AdSense sees
-  // a new pageview, covering pages that rely on auto-ads (e.g. /c/maps/).
-  // The push is a no-op when the AdSense script hasn't loaded yet (GDPR
-  // consent pending) — it will be processed once the script loads.
-  useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch {
-      // no-op
-    }
-  }, [location.pathname]);
 
   return (
     <IntlProvider
@@ -175,47 +159,6 @@ const buildRouter = () =>
           <Route path="/c/reset-password" element={<ResetPasswordPage />} />
 
           <Route element={<CommonPage />}>
-            {/* Admin routes */}
-            <Route
-              path="/c/admin"
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <AdminConsole />
-                </Suspense>
-              }
-            />
-            <Route
-              element={
-                <Suspense fallback={<LoadingFallback />}>
-                  <AdminLayout />
-                </Suspense>
-              }
-            >
-              <Route
-                path="/c/admin/accounts"
-                element={
-                  <Suspense fallback={<LoadingFallback />}>
-                    <AccountsPage />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="/c/admin/maps"
-                element={
-                  <Suspense fallback={<LoadingFallback />}>
-                    <MapsAdminPage />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="/c/admin/system"
-                element={
-                  <Suspense fallback={<LoadingFallback />}>
-                    <SystemPage />
-                  </Suspense>
-                }
-              />
-            </Route>
 
             <Route
               path="/c/maps/"
