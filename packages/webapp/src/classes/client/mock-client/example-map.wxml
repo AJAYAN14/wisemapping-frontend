@@ -1,70 +1,570 @@
-<map name="3" version="tango">
-    <topic central="true" text="Welcome To WiseMapping" id="1" fontStyle=";;#ffffff;;;">
-        <icon id="sign_info"/>
-        <topic position="199,-112" order="0" id="30">
-            <text><![CDATA[5 min tutorial video ?
-Follow the link !]]></text>
-            <link url="https://www.youtube.com/tv?vq=medium#/watch?v=rKxZwNKs9cE" urlType="url"/>
-            <icon id="hard_computer"/>
+<map name="8.1、非标设计常用附件的选型" theme="prism" layout="mindmap" version="tango">
+    <topic central="true" text="非标设计常用附件的选型" connStyle="3" id="1">
+        <topic order="0" text="1、螺栓" shape="rounded rectangle" connStyle="3" id="2">
+            <topic order="0" text="1、常用螺栓种类" shape="rounded rectangle" connStyle="3" id="3">
+                <topic order="0" text="1. 螺栓" shape="rounded rectangle" connStyle="3" id="4">
+                    <topic order="0" text="1、外六角螺栓" shape="rounded rectangle" connStyle="3" id="5">
+                        <topic order="0" text="外六角螺栓示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="135,100:/images/xmind/9cda0e53d7210f73093227722a667bb889b2c47cd0c6c96576d2767737b50f66.png" id="6">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="2、内六角螺栓" shape="rounded rectangle" connStyle="3" id="7">
+                        <topic order="0" text="内六角螺栓示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="134,100:/images/xmind/1784d33dcc1ec8743b4c668dea1f5b13cfbcf96792c4ec4775dc1c068bc70961.png" id="8">
+                        </topic>
+                        <topic order="1" text="圆柱头可下沉、节省空间、美观" shape="rounded rectangle" connStyle="3" id="9">
+                        </topic>
+                    </topic>
+                    <topic order="2" text="3、沉头螺栓" shape="rounded rectangle" connStyle="3" id="10">
+                        <topic order="0" text="内六角沉头螺栓" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,97:/images/xmind/1c3bdeac1d5a526c5bffdb212fa95a7e6904d4db5c7a6855ce5c9b9520811f54.png" id="11">
+                            <topic order="0" text="十字沉头螺栓" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="110,100:/images/xmind/e6aee615330ed935729ed154a0979c84b7ef423aeb4efc8ef87ff7e01da3d419.png" id="12">
+                                <topic order="0" text="沉头孔" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="109,100:/images/xmind/89888be5a0005a76ab7f1328697a8bfab56e319fd923b4042a9765af2f606070.png" id="13">
+                                </topic>
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="3" text="4、法兰螺栓" shape="rounded rectangle" connStyle="3" id="14">
+                        <topic order="0" text="法兰螺栓示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,98:/images/xmind/5b5e1974fc5eb9476c46c5158d3c32f743003d6693e01d30d52ff77b0f899f63.png" id="15">
+                        </topic>
+                    </topic>
+                    <topic order="4" text="5、方头螺栓" shape="rounded rectangle" connStyle="3" id="16">
+                        <topic order="0" text="方头螺栓示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="142,100:/images/xmind/a6a0aec3e01b0be40cf800f9dd100358726037d63083c5a24effadaa25b808b7.png" id="17">
+                            <topic order="0" text="依靠其他零件防松" shape="rounded rectangle" connStyle="3" id="18">
+                            </topic>
+                            <topic order="1" text="在T型槽中调整螺栓位置" shape="rounded rectangle" connStyle="3" id="19">
+                            </topic>
+                            <topic order="2" text="方头螺栓示意图示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,91:/images/xmind/2a329146a06a7ff6900dab23a802a347adcabf22a30bf301e7c63cb2197370c9.png" id="20">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="5" text="6、圆头螺栓" shape="rounded rectangle" connStyle="3" id="21">
+                        <topic order="0" text="圆头螺栓示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="143,100:/images/xmind/72129e92ae7620fa6e573ae1413cda92da96771f1a4fa2e2d737db2569fcdce3.png" id="22">
+                        </topic>
+                        <topic order="1" text="圆头螺栓示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,91:/images/xmind/7cef12dfd23c76ebd8eb04b830872e73d5db980d04ea0f8e8d3e7bfb543a3794.png" id="23">
+                        </topic>
+                        <topic order="2" text="外部钣金、亚克力板、装饰类固定居多" shape="rounded rectangle" connStyle="3" id="24">
+                        </topic>
+                    </topic>
+                    <topic order="6" text="7、机米螺丝" shape="rounded rectangle" connStyle="3" id="25">
+                        <topic order="0" text="机米螺丝示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="126,100:/images/xmind/d094abb2170ae5ddc1787a06979d245cf9e1cd6521bb1b6d7d21f2c507306d39.png" id="26">
+                        </topic>
+                        <topic order="1" text="定位" shape="rounded rectangle" connStyle="3" id="27">
+                        </topic>
+                        <topic order="2" text="顶丝" shape="rounded rectangle" connStyle="3" id="28">
+                        </topic>
+                    </topic>
+                    <topic order="7" text="8、铰制孔螺栓" shape="rounded rectangle" connStyle="3" id="29">
+                        <topic order="0" text="铰制孔螺栓示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="148,100:/images/xmind/1d63cae4be7af7049fce443e140d9a2b06255a52d2073c8fd1f833e3e76971c3.png" id="30">
+                        </topic>
+                        <topic order="1" text="可受剪切力" shape="rounded rectangle" connStyle="3" id="31">
+                        </topic>
+                        <topic order="2" text="有定位功能" shape="rounded rectangle" connStyle="3" id="32">
+                        </topic>
+                    </topic>
+                    <topic order="8" text="9、梅花六角螺丝" shape="rounded rectangle" connStyle="3" id="33">
+                        <topic order="0" text="梅花六角螺丝示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="128,100:/images/xmind/30ffb55767c183d0c1b46fa83b494a4ffe06624889af06c75758b3530efd0a70.png" id="34">
+                        </topic>
+                    </topic>
+                </topic>
+                <topic order="1" text="2. 螺母" shape="rounded rectangle" connStyle="3" id="35">
+                    <topic order="0" text="六角螺母" shape="rounded rectangle" connStyle="3" id="36">
+                        <topic order="0" text="六角螺母示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="138,100:/images/xmind/fc34976642c6fd95d95f21843ec47ad1861619f4bd7d202235b9833da05c5db2.png" id="37">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="自锁螺母" shape="rounded rectangle" connStyle="3" id="38">
+                        <topic order="0" text="自锁螺母示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="122,100:/images/xmind/ad01a7e98cd59cfb4878ddaa4d9eced9007a48c7eab654d9e7aa3ce999673bbe.png" id="39">
+                            <topic order="0" text="自锁螺母示意图示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,69:/images/xmind/bbe60e61462ae9975099daacabb10319c2f92f8a15d8905e46409580da388b95.png" id="40">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="2" text="防松螺母" shape="rounded rectangle" connStyle="3" id="41">
+                        <topic order="0" text="防松螺母示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="123,100:/images/xmind/351472396d1fa2159b72be3d859b736a04964f1b55794e1af740f4aa8911ae0d.png" id="42">
+                        </topic>
+                        <topic order="1" text="防松螺母示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="145,100:/images/xmind/704332c2ea37bba3208634fed183dcb6ad738acb0153006173c32977e4c7f4c9.png" id="43">
+                        </topic>
+                    </topic>
+                    <topic order="3" text="锁紧螺母" shape="rounded rectangle" connStyle="3" id="44">
+                        <topic order="0" text="锁紧螺母示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,88:/images/xmind/e42c97a348420e9952eb8f236acd3130f564faf9cfb3c3691a073cdd9262a3cc.png" id="45">
+                        </topic>
+                    </topic>
+                    <topic order="4" text="环形螺母" shape="rounded rectangle" connStyle="3" id="46">
+                        <topic order="0" text="环形螺母示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="103,100:/images/xmind/cec3bcd6d23352659bbc4890263416596eda4aa983cb592fcff4efb8fc5074ba.png" id="47">
+                        </topic>
+                    </topic>
+                    <topic order="5" text="蝶形螺母" shape="rounded rectangle" connStyle="3" id="48">
+                        <topic order="0" text="蝶形螺母示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,93:/images/xmind/3001affb84ca3e6eed05446614495cb6a19cfa29f629ae8f2a13d686c23ad63b.png" id="49">
+                        </topic>
+                    </topic>
+                    <topic order="6" text="顶丝螺母" shape="rounded rectangle" connStyle="3" id="50">
+                        <topic order="0" text="顶丝螺母示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="131,100:/images/xmind/b619deeafdedc9fc14a43731ef585d7141efa4b596edcea59694c0d45dc1fc22.png" id="51">
+                        </topic>
+                    </topic>
+                    <topic order="7" text="圆螺母" shape="rounded rectangle" connStyle="3" id="52">
+                        <topic order="0" text="圆螺母示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,96:/images/xmind/4a94c9b7b417d151b1d0330640772ef7ba00698a0f2671aedf23ec7dcb23ff9e.png" id="53">
+                        </topic>
+                        <topic order="1" text="圆螺母示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,93:/images/xmind/c686da9b09ff7dfd7bed935c8002b25438f27a5f1b8bef2392130054bea9d859.png" id="54">
+                            <topic order="0" text="止动垫圈" shape="rounded rectangle" connStyle="3" id="55">
+                            </topic>
+                        </topic>
+                    </topic>
+                </topic>
+                <topic order="2" text="3、垫圈" shape="rounded rectangle" connStyle="3" id="56">
+                    <topic order="0" text="平垫圈" shape="rounded rectangle" connStyle="3" id="57">
+                        <topic order="0" text="平垫圈示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,97:/images/xmind/d4689793e50cf5e7d320545d636b87b90b943cd52ab3fff8ca7b2ccaa33b7dc4.png" id="58">
+                        </topic>
+                        <topic order="1" text="增加螺栓和结构件接触面" shape="rounded rectangle" connStyle="3" id="59">
+                        </topic>
+                        <topic order="2" text="防止螺栓磨损结构件" shape="rounded rectangle" connStyle="3" id="60">
+                        </topic>
+                        <topic order="3" text="不能防松" shape="rounded rectangle" connStyle="3" id="61">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="防松垫圈" shape="rounded rectangle" connStyle="3" id="62">
+                        <topic order="0" text="防松垫圈示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="129,100:/images/xmind/ef92e6674dae160d1a345c3d975990ff967b9400cc190992339fc40306bdea23.png" id="63">
+                        </topic>
+                        <topic order="1" text="弹簧垫圈" shape="rounded rectangle" connStyle="3" id="64">
+                        </topic>
+                        <topic order="2" text="增加螺栓的轴向力" shape="rounded rectangle" connStyle="3" id="65">
+                        </topic>
+                        <topic order="3" text="能够防松" shape="rounded rectangle" connStyle="3" id="66">
+                        </topic>
+                    </topic>
+                    <topic order="2" text="止动垫圈" shape="rounded rectangle" connStyle="3" id="67">
+                        <topic order="0" text="止动垫圈示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="104,100:/images/xmind/b06dfd38448087143d002a343ceb55b6685318dd3c9efcf005316cbe9c2906f6.png" id="68">
+                        </topic>
+                        <topic order="1" text="丝杆上、配合圆螺母" shape="rounded rectangle" connStyle="3" id="69">
+                        </topic>
+                    </topic>
+                    <topic order="3" text="自锁垫圈" shape="rounded rectangle" connStyle="3" id="70">
+                        <topic order="0" text="有强烈振动场合" shape="rounded rectangle" connStyle="3" id="71">
+                        </topic>
+                        <topic order="1" text="自锁垫圈示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="94,100:/images/xmind/004cb94ed9ef1b2646c02a83be7a2b53404ccc7853be867fc685cf37f473899c.png" id="72">
+                        </topic>
+                    </topic>
+                    <topic order="4" text="防松" shape="rounded rectangle" connStyle="3" id="73">
+                        <topic order="0" text="涂螺纹胶" shape="rounded rectangle" connStyle="3" id="74">
+                        </topic>
+                    </topic>
+                </topic>
+                <topic order="3" text="4、特殊" shape="rounded rectangle" connStyle="3" id="75">
+                    <topic order="0" text="耐药性" shape="rounded rectangle" connStyle="3" id="76">
+                        <topic order="0" text="哈氏合金螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="141,100:/images/xmind/e7a534cbf716bf6296fff46dbf37957380c74bd4f50234b4eca3e460b4631ec9.png" id="77">
+                        </topic>
+                        <topic order="1" text="哈氏合金、钛、316、铁氟龙、PEEK" shape="rounded rectangle" connStyle="3" id="78">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="防反射" shape="rounded rectangle" connStyle="3" id="79">
+                        <topic order="0" text="低温镀黑铬螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="149,100:/images/xmind/7de05ced4b934d4026c063d2d429521927a620464478036b25b290bf0cbf90a0.png" id="80">
+                        </topic>
+                        <topic order="1" text="发黑螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="109,100:/images/xmind/1e20808a08090acef433310aadfc281e1783f3db8232ea1eed44b7448080eba9.png" id="81">
+                        </topic>
+                    </topic>
+                    <topic order="2" text="耐热性" shape="rounded rectangle" connStyle="3" id="82">
+                        <topic order="0" text="陶瓷螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,83:/images/xmind/e9e250f93599a85b4dfbed944705ca71e763a8f2db81b8a2a092c48c08a1a6ab.png" id="83">
+                        </topic>
+                        <topic order="1" text="316、304、陶瓷螺栓（1500℃）" shape="rounded rectangle" connStyle="3" id="84">
+                        </topic>
+                    </topic>
+                    <topic order="3" text="绝缘性" shape="rounded rectangle" connStyle="3" id="85">
+                        <topic order="0" text="铁氟龙螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="121,100:/images/xmind/901b0ccc1f4c0e124e715981d4fdf82566e56e7fdfc0ba818f2d7e0333d14e15.png" id="86">
+                        </topic>
+                        <topic order="1" text="粉尘环境、电子产品  " shape="rounded rectangle" connStyle="3" id="87">
+                        </topic>
+                        <topic order="2" text="PEEK、铁氟龙" shape="rounded rectangle" connStyle="3" id="88">
+                        </topic>
+                    </topic>
+                    <topic order="4" text="无磁性" shape="rounded rectangle" connStyle="3" id="89">
+                        <topic order="0" text="磷青铜螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="137,100:/images/xmind/b7604861d20bd33055b9f126e8edb6623d178181d08ff8cd31bd4da3ac739e8a.png" id="90">
+                        </topic>
+                        <topic order="1" text="纯钛螺丝" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="135,100:/images/xmind/16f197e01156ca128bb87090e8d86b5e22976b24e9260e4b20b601e61bcff67f.png" id="91">
+                        </topic>
+                        <topic order="2" text="纯钛、磷青铜、316" shape="rounded rectangle" connStyle="3" id="92">
+                        </topic>
+                    </topic>
+                    <topic order="5" text="防盗螺丝" shape="rounded rectangle" connStyle="3" id="93">
+                        <topic order="0" text="防盗螺丝示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,94:/images/xmind/c9236557164eab2577fdcee3f273f40fa6f4dcf29d55d5e6b4efaf019806ca16.png" id="94">
+                        </topic>
+                        <topic order="1" text="防盗螺丝示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="124,100:/images/xmind/479c0f642bbc1c1f0b1173eef3e6aa3eb1a6e230f862dd2e0ce8a808279ea2e9.png" id="95">
+                        </topic>
+                        <topic order="2" text="安全门插销的紧固螺钉" shape="rounded rectangle" connStyle="3" id="96">
+                        </topic>
+                    </topic>
+                </topic>
+            </topic>
+            <topic order="1" text="2. 螺栓标准选择" shape="rounded rectangle" connStyle="3" id="97">
+                <topic order="0" text="1、粗牙细牙" shape="rounded rectangle" connStyle="3" id="98">
+                    <topic order="0" text="粗牙细牙示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,74:/images/xmind/7463925a487982805653b3a8f55e1a16f5695511c8ad0ee17ef758b3c9c03fd6.png" id="99">
+                    </topic>
+                    <topic order="1" text="粗牙：最常用、抗负载、冲击性强、容易松动" shape="rounded rectangle" connStyle="3" id="100">
+                    </topic>
+                    <topic order="2" text="细牙：气密性好、薄壁零件、调节机构、自锁性" shape="rounded rectangle" connStyle="3" id="101">
+                    </topic>
+                </topic>
+                <topic order="1" text="2、强度等级" shape="rounded rectangle" connStyle="3" id="102">
+                    <topic order="0" text="A2-70" shape="rounded rectangle" connStyle="3" id="103">
+                        <topic order="0" text="A奥氏体不锈钢" shape="rounded rectangle" connStyle="3" id="104">
+                        </topic>
+                        <topic order="1" text="2/304" shape="rounded rectangle" connStyle="3" id="105">
+                        </topic>
+                        <topic order="2" text="4/316" shape="rounded rectangle" connStyle="3" id="106">
+                        </topic>
+                        <topic order="3" text="70/抗拉强度700mpa" shape="rounded rectangle" connStyle="3" id="107">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="3.6/4.8/8.8/10.9/12.9" shape="rounded rectangle" connStyle="3" id="108">
+                        <topic order="0" text="4.8/8.8常用" shape="rounded rectangle" connStyle="3" id="109">
+                        </topic>
+                        <topic order="1" text="4抗拉强度400mpa" shape="rounded rectangle" connStyle="3" id="110">
+                        </topic>
+                        <topic order="2" text="0.8屈服强度400*0.8=320mpa" shape="rounded rectangle" connStyle="3" id="111">
+                        </topic>
+                        <topic order="3" text="12.9" shape="rounded rectangle" connStyle="3" id="112">
+                        </topic>
+                        <topic order="4" text="抗拉强度1200mpa" shape="rounded rectangle" connStyle="3" id="113">
+                        </topic>
+                        <topic order="5" text="屈服强度0.9*1200=1080mpa" shape="rounded rectangle" connStyle="3" id="114">
+                        </topic>
+                    </topic>
+                    <topic order="2" text="pa=N/m²" shape="rounded rectangle" connStyle="3" id="115">
+                    </topic>
+                    <topic order="3" text="M10" shape="rounded rectangle" connStyle="3" id="116">
+                        <topic order="0" text="直径10mm" shape="rounded rectangle" connStyle="3" id="117">
+                        </topic>
+                        <topic order="1" text="截面积78.5mm²" shape="rounded rectangle" connStyle="3" id="118">
+                        </topic>
+                        <topic order="2" text="400mpa" shape="rounded rectangle" connStyle="3" id="119">
+                            <topic order="0" text="400*1000000pa" shape="rounded rectangle" connStyle="3" id="120">
+                            </topic>
+                            <topic order="1" text="400*1000000N/m²" shape="rounded rectangle" connStyle="3" id="121">
+                            </topic>
+                            <topic order="2" text="400N/mm²" shape="rounded rectangle" connStyle="3" id="122">
+                            </topic>
+                        </topic>
+                        <topic order="3" text="31,400N" shape="rounded rectangle" connStyle="3" id="123">
+                            <topic order="0" text="以上断裂" shape="rounded rectangle" connStyle="3" id="124">
+                            </topic>
+                            <topic order="1" text="以内变形" shape="rounded rectangle" connStyle="3" id="125">
+                            </topic>
+                        </topic>
+                        <topic order="4" text="25,120N" shape="rounded rectangle" connStyle="3" id="126">
+                            <topic order="0" text="以内不会变形" shape="rounded rectangle" connStyle="3" id="127">
+                            </topic>
+                        </topic>
+                    </topic>
+                </topic>
+                <topic order="2" text="3、公制英制" shape="rounded rectangle" connStyle="3" id="128">
+                    <topic order="0" text="公制英制示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="80,100:/images/xmind/9219d6b0be8768772b0190d28c7744a60144271bef5d3f0f36d81149ab7e5c25.png" id="129">
+                    </topic>
+                </topic>
+                <topic order="3" text="4、选型参考" shape="rounded rectangle" connStyle="3" id="130">
+                    <topic order="0" text="参考标准件" shape="rounded rectangle" connStyle="3" id="131">
+                    </topic>
+                    <topic order="1" text="M6/8/10常用" shape="rounded rectangle" connStyle="3" id="132">
+                    </topic>
+                    <topic order="2" text="减少螺栓种类、尽量统一" shape="rounded rectangle" connStyle="3" id="133">
+                    </topic>
+                </topic>
+            </topic>
+            <topic order="2" text="3、螺栓强度校核" shape="rounded rectangle" connStyle="3" id="134">
+                <topic order="0" text="纯轴向力" shape="rounded rectangle" connStyle="3" id="135">
+                    <topic order="0" text="松连接" shape="rounded rectangle" connStyle="3" id="136">
+                    </topic>
+                </topic>
+                <topic order="1" text="有剪切力" shape="rounded rectangle" connStyle="3" id="137">
+                    <topic order="0" text="铰制孔螺栓" shape="rounded rectangle" connStyle="3" id="138">
+                    </topic>
+                    <topic order="1" text="松连接+销钉" shape="rounded rectangle" connStyle="3" id="139">
+                    </topic>
+                </topic>
+                <topic order="2" text="螺纹深度" shape="rounded rectangle" connStyle="3" id="140">
+                    <topic order="0" text="1.2~1.5倍螺纹大径" shape="rounded rectangle" connStyle="3" id="141">
+                    </topic>
+                    <topic order="1" text="钢材质：1~1.2" shape="rounded rectangle" connStyle="3" id="142">
+                    </topic>
+                    <topic order="2" text="铸造件：1.5" shape="rounded rectangle" connStyle="3" id="143">
+                    </topic>
+                    <topic order="3" text="非金属件：2" shape="rounded rectangle" connStyle="3" id="144">
+                    </topic>
+                </topic>
+            </topic>
         </topic>
-        <topic position="-167,-112" order="1" text="Try it Now!" id="11" fontStyle=";;#525c61;;;" bgColor="#250be3" brColor="#080559">
-            <icon id="face_surprise"/>
-            <topic position="-260,-141" order="0" text="Double Click" id="12" fontStyle=";;#525c61;;italic;"/>
-            <topic position="-278,-112" order="1" id="13">
-                <text><![CDATA[Press "enter" to add a 
-Sibling]]></text>
+        <topic order="1" text="2、挡圈" shape="rounded rectangle" connStyle="3" id="145">
+            <topic order="0" text="轴用" shape="rounded rectangle" connStyle="3" id="146">
+                <topic order="0" text="轴用示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,50:/images/xmind/8627fd67c93aaa8fcba3547029e1534275227198db73d5f4d78efb6432095d98.png" id="147">
+                </topic>
+                <topic order="1" text="轴用示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="80,100:/images/xmind/e3deae589c31f1fa4331ec0003c6589c40aacd9c8f4c0a685e91d65cf74013e5.png" id="148">
+                </topic>
             </topic>
-            <topic position="-271,-83" order="2" text="Drag map to move" id="14" fontStyle=";;#525c61;;italic;"/>
-        </topic>
-        <topic position="155,-18" order="2" text="Features" id="15" fontStyle=";;#525c61;;;">
-            <topic position="244,-80" order="0" text="Links to Sites" id="16" fontStyle=";6;#525c61;;;">
-                <link url="http://www.digg.com" urlType="url"/>
-            </topic>
-            <topic position="224,-30" order="1" text="Styles" id="31">
-                <topic position="285,-55" order="0" text="Fonts" id="17" fontStyle=";;#525c61;;;"/>
-                <topic position="299,-30" order="1" text="Topic Shapes" shape="line" id="19" fontStyle=";;#525c61;;;"/>
-                <topic position="295,-5" order="2" text="Topic Color" id="18" fontStyle=";;#525c61;;;"/>
-            </topic>
-            <topic position="229,20" order="2" text="Icons" id="20" fontStyle=";;#525c61;;;">
-                <icon id="object_rainbow"/>
-            </topic>
-            <topic position="249,45" order="3" text="History Changes" id="21" fontStyle=";;#525c61;;;">
-                <icon id="arrowc_turn_left"/>
+            <topic order="1" text="孔用" shape="rounded rectangle" connStyle="3" id="149">
+                <topic order="0" text="孔用示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,50:/images/xmind/c5bd16557f07dfd01451aa79fcf88dedc8d6b7f378cee5c358684bc854b1a60c.png" id="150">
+                </topic>
+                <topic order="1" text="孔用示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="80,100:/images/xmind/7fa46daab723c20688014de0894d3c934518c92c364006b820656102994e5c7f.png" id="151">
+                </topic>
             </topic>
         </topic>
-        <topic position="-176,-21" order="3" text="Mind Mapping" id="6" fontStyle=";;#525c61;;;" bgColor="#edabff">
-            <icon id="thumb_thumb_up"/>
-            <topic position="-293,-58" order="0" text="Share with Collegues" id="7" fontStyle=";;#525c61;;;"/>
-            <topic position="-266,-33" order="1" text="Online" id="8" fontStyle=";;#525c61;;;"/>
-            <topic position="-288,-8" order="2" text="Anyplace, Anytime" id="9" fontStyle=";;#525c61;;;"/>
-            <topic position="-266,17" order="3" text="Free!!!" id="10" fontStyle=";;#525c61;;;"/>
-        </topic>
-        <topic position="171,95" order="4" text="Productivity" id="2" fontStyle=";;#525c61;;;" bgColor="#d9b518">
-            <icon id="chart_bar"/>
-            <topic position="281,70" order="0" text="Share your ideas" id="3" fontStyle=";;#525c61;;;">
-                <icon id="bulb_light_on"/>
+        <topic order="2" text="3、平键" shape="rounded rectangle" connStyle="3" id="152">
+            <topic order="0" text="平键示意图 1" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,50:/images/xmind/b6a0338447ee29e44544e36eb7c49e95189c2f55ff7cc74d2f1c569f72f8a214.png" id="153">
             </topic>
-            <topic position="270,95" order="1" text="Brainstorming" id="4" fontStyle=";;#525c61;;;"/>
-            <topic position="256,120" order="2" text="Visual " id="5" fontStyle=";;#525c61;;;"/>
-        </topic>
-        <topic position="-191,54" order="5" text="Install In Your Server" id="27" fontStyle=";;#525c61;;;">
-            <icon id="hard_computer"/>
-            <topic position="-319,42" order="0" text="Open Source" id="29" fontStyle=";;#525c61;;;">
-                <icon id="soft_penguin"/>
-                <link url="http://www.wisemapping.org/" urlType="url"/>
-            </topic>
-            <topic position="-310,67" order="1" text="Download" id="28" fontStyle=";;#525c61;;;">
-                <link url="http://www.wisemapping.com/inyourserver.html" urlType="url"/>
+            <topic order="1" text="平键示意图 2" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="115,100:/images/xmind/eac302e5e5c068229dac01c4788e33723e73b00cf7ae014604a8e79287e87b5b.png" id="154">
             </topic>
         </topic>
-        <topic position="-169,117" order="7" text="Collaborate" id="32">
-            <icon id="people_group"/>
-            <topic position="-253,92" order="0" text="Embed" id="33"/>
-            <topic position="-254,117" order="1" text="Publish" id="34"/>
-            <topic position="-277,142" order="2" text="Share for Edition" id="35">
-                <icon id="mail_envelop"/>
+        <topic order="3" text="4、弹簧" shape="rounded rectangle" connStyle="3" id="155">
+            <topic order="0" text="分类" shape="rounded rectangle" connStyle="3" id="156">
+                <topic order="0" text="索要样品" shape="rounded rectangle" connStyle="3" id="157">
+                    <topic order="0" text="要求较高时，用样品做实验" shape="rounded rectangle" connStyle="3" id="158">
+                    </topic>
+                </topic>
+                <topic order="1" text="拉伸弹簧" shape="rounded rectangle" connStyle="3" id="159">
+                    <topic order="0" text="初始状态不可压缩、拉伸时实现弹簧拉力" shape="rounded rectangle" connStyle="3" id="160">
+                    </topic>
+                    <topic order="1" text="拉伸弹簧示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,57:/images/xmind/cfb6fede86c009ab712e231dfe46f223913f8787cc56e624dbfdede7946fec4f.png" id="161">
+                    </topic>
+                    <topic order="2" text="拉伸弹簧：初始拉力 +（弹簧常数 · 位移量）" shape="rounded rectangle" connStyle="3" id="162">
+                    </topic>
+                </topic>
+                <topic order="2" text="压缩弹簧" shape="rounded rectangle" connStyle="3" id="163">
+                    <topic order="0" text="初始状态可拉伸可压缩、以压缩为主" shape="rounded rectangle" connStyle="3" id="164">
+                    </topic>
+                    <topic order="1" text="压缩弹簧示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,95:/images/xmind/e395f62a1af829887bca7fc5078c8ba5865685f659ba343579ed10743fe2527c.png" id="165">
+                    </topic>
+                    <topic order="2" text="压缩弹簧：弹簧常数 · 位移量" shape="rounded rectangle" connStyle="3" id="166">
+                    </topic>
+                    <topic order="3" text="不同弹簧、弹簧常量不同" shape="rounded rectangle" connStyle="3" id="167">
+                    </topic>
+                    <topic order="4" text="位移量、根据需求" shape="rounded rectangle" connStyle="3" id="168">
+                    </topic>
+                    <topic order="5" text="所需力、根据需求" shape="rounded rectangle" connStyle="3" id="169">
+                    </topic>
+                </topic>
+            </topic>
+            <topic order="1" text="选型" shape="rounded rectangle" connStyle="3" id="170">
+                <topic order="0" text="1、弹簧种类" shape="rounded rectangle" connStyle="3" id="171">
+                </topic>
+                <topic order="1" text="2、行程范围" shape="rounded rectangle" connStyle="3" id="172">
+                </topic>
+                <topic order="2" text="3、安装空间" shape="rounded rectangle" connStyle="3" id="173">
+                    <topic order="0" text="长度、外径/内径" shape="rounded rectangle" connStyle="3" id="174">
+                    </topic>
+                </topic>
+                <topic order="3" text="4、力的范围" shape="rounded rectangle" connStyle="3" id="175">
+                    <topic order="0" text="校核位移范围对应输出力是否符合" shape="rounded rectangle" connStyle="3" id="176">
+                    </topic>
+                </topic>
+            </topic>
+        </topic>
+        <topic order="4" text="5、氮气弹簧" shape="rounded rectangle" connStyle="3" id="177">
+            <topic order="0" text="氮气弹簧示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="85,100:/images/xmind/77378c6b8a6c60d79797d53d4c407b3ae3e49623ce5b3da0eb6888df1fdcc468.png" id="178">
+            </topic>
+            <topic order="1" text="F=（W×A）/B" shape="rounded rectangle" connStyle="3" id="179">
+            </topic>
+            <topic order="2" text="F=最大长度时所需反作用力" shape="rounded rectangle" connStyle="3" id="180">
+            </topic>
+            <topic order="3" text="W=负载重量" shape="rounded rectangle" connStyle="3" id="181">
+            </topic>
+            <topic order="4" text="A=支点与重心水平距离" shape="rounded rectangle" connStyle="3" id="182">
+            </topic>
+            <topic order="5" text="B=支点与氮气弹簧轴线之间的垂直距离" shape="rounded rectangle" connStyle="3" id="183">
+            </topic>
+        </topic>
+        <topic order="5" text="6、导轨钳制器" shape="rounded rectangle" connStyle="3" id="184">
+            <topic order="0" text="概述" shape="rounded rectangle" connStyle="3" id="185">
+                <topic order="0" text="靠夹紧直线导轨的接触面，依靠摩擦力实现定位、固定" shape="rounded rectangle" connStyle="3" id="186">
+                </topic>
+            </topic>
+            <topic order="1" text="分类" shape="rounded rectangle" connStyle="3" id="187">
+                <topic order="0" text="手动" shape="rounded rectangle" connStyle="3" id="188">
+                    <topic order="0" text="气动" shape="rounded rectangle" connStyle="3" id="189">
+                        <topic order="0" text="液压" shape="rounded rectangle" connStyle="3" id="190">
+                        </topic>
+                    </topic>
+                </topic>
+            </topic>
+            <topic order="2" text="应用" shape="rounded rectangle" connStyle="3" id="191">
+                <topic order="0" text="位置固定机构小型化、低成本化" shape="rounded rectangle" connStyle="3" id="192">
+                </topic>
+                <topic order="1" text="防掉落机构的小型化提高安全性" shape="rounded rectangle" connStyle="3" id="193">
+                </topic>
+            </topic>
+            <topic order="3" text="选型" shape="rounded rectangle" connStyle="3" id="194">
+                <topic order="0" text="1.选择种类" shape="rounded rectangle" connStyle="3" id="195">
+                    <topic order="0" text="手、气、液" shape="rounded rectangle" connStyle="3" id="196">
+                    </topic>
+                </topic>
+                <topic order="1" text="2.选择导轨" shape="rounded rectangle" connStyle="3" id="197">
+                    <topic order="0" text="匹配钳制器" shape="rounded rectangle" connStyle="3" id="198">
+                    </topic>
+                </topic>
+                <topic order="2" text="3.确认保持力" shape="rounded rectangle" connStyle="3" id="199">
+                </topic>
+                <topic order="3" text="4.确定尺寸规格" shape="rounded rectangle" connStyle="3" id="200">
+                </topic>
+            </topic>
+        </topic>
+        <topic order="6" text="7、自动化功能组件" shape="rounded rectangle" connStyle="3" id="201">
+            <topic order="0" text="PPU机械手" shape="rounded rectangle" connStyle="3" id="202">
+                <topic order="0" text="介绍" shape="rounded rectangle" connStyle="3" id="203">
+                    <topic order="0" text="PPU" shape="rounded rectangle" connStyle="3" id="204">
+                        <topic order="0" text="P：pick" shape="rounded rectangle" connStyle="3" id="205">
+                            <topic order="0" text="拿取" shape="rounded rectangle" connStyle="3" id="206">
+                            </topic>
+                        </topic>
+                        <topic order="1" text="P：place" shape="rounded rectangle" connStyle="3" id="207">
+                            <topic order="0" text="放置" shape="rounded rectangle" connStyle="3" id="208">
+                            </topic>
+                        </topic>
+                        <topic order="2" text="U：unit" shape="rounded rectangle" connStyle="3" id="209">
+                            <topic order="0" text="组件" shape="rounded rectangle" connStyle="3" id="210">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="1" text="优势" shape="rounded rectangle" connStyle="3" id="211">
+                        <topic order="0" text="1、模块化" shape="rounded rectangle" connStyle="3" id="212">
+                            <topic order="0" text="节约设计时间" shape="rounded rectangle" connStyle="3" id="213">
+                            </topic>
+                        </topic>
+                        <topic order="1" text="2、调试简单" shape="rounded rectangle" connStyle="3" id="214">
+                            <topic order="0" text="节约调试时间" shape="rounded rectangle" connStyle="3" id="215">
+                            </topic>
+                        </topic>
+                        <topic order="2" text="3、装配简单" shape="rounded rectangle" connStyle="3" id="216">
+                            <topic order="0" text="节约制造时间" shape="rounded rectangle" connStyle="3" id="217">
+                            </topic>
+                        </topic>
+                        <topic order="3" text="4、适合高速运行" shape="rounded rectangle" connStyle="3" id="218">
+                            <topic order="0" text="最快0.5s循环时间" shape="rounded rectangle" connStyle="3" id="219">
+                            </topic>
+                        </topic>
+                        <topic order="4" text="5、集成化程度高" shape="rounded rectangle" connStyle="3" id="220">
+                            <topic order="0" text="节约了安装空间" shape="rounded rectangle" connStyle="3" id="221">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="2" text="驱动" shape="rounded rectangle" connStyle="3" id="222">
+                        <topic order="0" text="伺服电机" shape="rounded rectangle" connStyle="3" id="223">
+                            <topic order="0" text="速度快、响应快、精度高" shape="rounded rectangle" connStyle="3" id="224">
+                            </topic>
+                        </topic>
+                        <topic order="1" text="步进电机" shape="rounded rectangle" connStyle="3" id="225">
+                            <topic order="0" text="适中" shape="rounded rectangle" connStyle="3" id="226">
+                            </topic>
+                        </topic>
+                        <topic order="2" text="摆动气缸" shape="rounded rectangle" connStyle="3" id="227">
+                            <topic order="0" text="成本低、需求不高场合、平稳性不佳" shape="rounded rectangle" connStyle="3" id="228">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="3" text="适用" shape="rounded rectangle" connStyle="3" id="229">
+                        <topic order="0" text="轻载、高速、取放料、紧凑空间" shape="rounded rectangle" connStyle="3" id="230">
+                        </topic>
+                    </topic>
+                </topic>
+                <topic order="1" text="种类" shape="rounded rectangle" connStyle="3" id="231">
+                    <topic order="0" text="90°PPU机械手" shape="rounded rectangle" connStyle="3" id="232">
+                    </topic>
+                    <topic order="1" text="U型PPU机械手" shape="rounded rectangle" connStyle="3" id="233">
+                    </topic>
+                </topic>
+                <topic order="2" text="选型" shape="rounded rectangle" connStyle="3" id="234">
+                    <topic order="0" text="1、选种类" shape="rounded rectangle" connStyle="3" id="235">
+                        <topic order="0" text="90°还是U型的" shape="rounded rectangle" connStyle="3" id="236">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="2、看行程" shape="rounded rectangle" connStyle="3" id="237">
+                        <topic order="0" text="90°" shape="rounded rectangle" connStyle="3" id="238">
+                            <topic order="0" text="°示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="105,100:/images/xmind/a4071e6406a28c57521ef5a6d7e108d27d55538b6b91ce81c6dc567a03f8a0da.png" id="239">
+                            </topic>
+                            <topic order="1" text="A" shape="rounded rectangle" connStyle="3" id="240">
+                                <topic order="0" text="取料点" shape="rounded rectangle" connStyle="3" id="241">
+                                </topic>
+                            </topic>
+                            <topic order="2" text="D" shape="rounded rectangle" connStyle="3" id="242">
+                                <topic order="0" text="放料点" shape="rounded rectangle" connStyle="3" id="243">
+                                </topic>
+                            </topic>
+                            <topic order="3" text="B" shape="rounded rectangle" connStyle="3" id="244">
+                                <topic order="0" text="旋转开始" shape="rounded rectangle" connStyle="3" id="245">
+                                </topic>
+                            </topic>
+                            <topic order="4" text="C" shape="rounded rectangle" connStyle="3" id="246">
+                                <topic order="0" text="旋转结束" shape="rounded rectangle" connStyle="3" id="247">
+                                </topic>
+                            </topic>
+                        </topic>
+                        <topic order="1" text="U型" shape="rounded rectangle" connStyle="3" id="248">
+                            <topic order="0" text="U型示意图" shape="rounded rectangle" connStyle="3" bgColor="#FFFFFF" brColor="#CBD5E1" image="150,51:/images/xmind/0486d53be74fa8e6c5e7c691e6dfb8325b374e24e772b29b4aeeaa17886ad2dc.png" id="249">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="2" text="3、看负载" shape="rounded rectangle" connStyle="3" id="250">
+                        <topic order="0" text="计算负载总质量" shape="rounded rectangle" connStyle="3" id="251">
+                        </topic>
+                    </topic>
+                    <topic order="3" text="4、看速度" shape="rounded rectangle" connStyle="3" id="252">
+                        <topic order="0" text="行程时间曲线表" shape="rounded rectangle" connStyle="3" id="253">
+                            <topic order="0" text="负载越重、速度越慢、循环时间越长" shape="rounded rectangle" connStyle="3" id="254">
+                            </topic>
+                        </topic>
+                    </topic>
+                    <topic order="4" text="5、看尺寸" shape="rounded rectangle" connStyle="3" id="255">
+                        <topic order="0" text="外形尺寸" shape="rounded rectangle" connStyle="3" id="256">
+                            <topic order="0" text="能否放得下、是否有干涉、安装是否方便" shape="rounded rectangle" connStyle="3" id="257">
+                            </topic>
+                        </topic>
+                    </topic>
+                </topic>
+            </topic>
+            <topic order="1" text="小型输送机" shape="rounded rectangle" connStyle="3" id="258">
+                <topic order="0" text="选型" shape="rounded rectangle" connStyle="3" id="259">
+                    <topic order="0" text="1、输送机的种类" shape="rounded rectangle" connStyle="3" id="260">
+                        <topic order="0" text="平皮带、同步带、滚子链、滚筒" shape="rounded rectangle" connStyle="3" id="261">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="2、电机安装形式" shape="rounded rectangle" connStyle="3" id="262">
+                        <topic order="0" text="方便安装、空间允许" shape="rounded rectangle" connStyle="3" id="263">
+                        </topic>
+                    </topic>
+                    <topic order="2" text="3、输送组件尺寸" shape="rounded rectangle" connStyle="3" id="264">
+                        <topic order="0" text="长度" shape="rounded rectangle" connStyle="3" id="265">
+                        </topic>
+                        <topic order="1" text="宽度" shape="rounded rectangle" connStyle="3" id="266">
+                        </topic>
+                    </topic>
+                    <topic order="3" text="4、功率及减速比" shape="rounded rectangle" connStyle="3" id="267">
+                        <topic order="0" text="物料重量" shape="rounded rectangle" connStyle="3" id="268">
+                        </topic>
+                    </topic>
+                    <topic order="4" text="5、确定皮带材质" shape="rounded rectangle" connStyle="3" id="269">
+                        <topic order="0" text="物料种类" shape="rounded rectangle" connStyle="3" id="270">
+                        </topic>
+                    </topic>
+                </topic>
+            </topic>
+            <topic order="2" text="需定做组件" shape="rounded rectangle" connStyle="3" id="271">
+                <topic order="0" text="1、振动盘" shape="rounded rectangle" connStyle="3" id="272">
+                </topic>
+                <topic order="1" text="2、螺丝供料器" shape="rounded rectangle" connStyle="3" id="273">
+                </topic>
+                <topic order="2" text="3、弹簧供料器" shape="rounded rectangle" connStyle="3" id="274">
+                </topic>
+                <topic order="3" text="4、点胶机构" shape="rounded rectangle" connStyle="3" id="275">
+                </topic>
+                <topic order="4" text="5、飞达机构" shape="rounded rectangle" connStyle="3" id="276">
+                </topic>
+                <topic order="5" text="6、环形轨道输送线" shape="rounded rectangle" connStyle="3" id="277">
+                </topic>
+                <topic order="6" text="沟通" shape="rounded rectangle" connStyle="3" id="278">
+                    <topic order="0" text="布局" shape="rounded rectangle" connStyle="3" id="279">
+                        <topic order="0" text="工位数、工位布局、外形尺寸" shape="rounded rectangle" connStyle="3" id="280">
+                        </topic>
+                    </topic>
+                    <topic order="1" text="产品参数" shape="rounded rectangle" connStyle="3" id="281">
+                        <topic order="0" text="重量、外形尺寸、输送形式、节拍、加工工艺" shape="rounded rectangle" connStyle="3" id="282">
+                        </topic>
+                    </topic>
+                    <topic order="2" text="工艺参数" shape="rounded rectangle" connStyle="3" id="283">
+                        <topic order="0" text="精度、速度要求" shape="rounded rectangle" connStyle="3" id="284">
+                        </topic>
+                    </topic>
+                </topic>
             </topic>
         </topic>
     </topic>
-    <relationship srcTopicId="30" destTopicId="11" lineType="3" srcCtrlPoint="-80,-56" destCtrlPoint="110,-116" endArrow="false" startArrow="true"/>
 </map>

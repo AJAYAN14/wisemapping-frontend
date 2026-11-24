@@ -30,6 +30,7 @@ import Client, {
   JwtAuth,
   MapMetadata,
 } from '..';
+import exampleMap from './example-map.wxml';
 import { LocaleCode, localeFromStr } from '../../app-i18n';
 import JwtTokenConfig from '../../jwt-token-config';
 import { setAnalyticsUserEmail, clearAnalyticsUserId } from '../../../utils/analytics';
@@ -53,14 +54,11 @@ const label3: Label = {
   color: 'red',
 };
 
-// The item at `index` of a non-empty list, wrapping around at its end.
-const cycle = <T>(list: readonly [T, ...T[]], index: number): T =>
-  list[index % list.length] ?? list[0];
-
 class MockClient implements Client {
   private maps: MapInfo[] = [];
   private labels: Label[] = [];
   private permissionsByMap: Map<number, Permission[]> = new Map();
+  private customXmlByMapId: Map<number, string> = new Map();
 
   constructor() {
     // Remove, just for develop ....
@@ -96,136 +94,29 @@ class MockClient implements Client {
       createMapInfo(
         1,
         true,
-        'El Mapa',
-        [],
-        'Paulo',
-        '2008-06-02T00:00:00Z',
-        'Berna',
-        '2008-06-02T00:00:00Z',
-        '',
+        '8.1、非标设计常用附件的选型',
+        [label1],
+        '我',
+        '2026-11-24T18:00:00Z',
+        '我',
+        '2026-11-24T18:00:00Z',
+        '从 XMind 导入的非标设计附件选型导图',
         true,
         'owner',
       ),
       createMapInfo(
-        2,
-        false,
-        'My New Project',
+        10,
+        true,
+        '8.1、非标设计常用附件的选型',
         [label1],
-        'Paulo',
-        '2025-01-15T10:30:00Z',
-        'Paulo',
-        '2025-01-15T14:20:00Z',
-        'A new mindmap project for testing',
-        false,
+        '我',
+        '2026-11-24T18:00:00Z',
+        '我',
+        '2026-11-24T18:00:00Z',
+        '从 XMind 导入的非标设计附件选型导图',
+        true,
         'owner',
       ),
-      createMapInfo(
-        11,
-        false,
-        'El Mapa3',
-        [label1, label2],
-        'Paulo3',
-        '2008-06-02T00:00:00Z',
-        'Berna',
-        '2008-06-02T00:00:00Z',
-        '',
-        false,
-        'editor',
-      ),
-      createMapInfo(
-        12,
-        false,
-        'Team Roadmap (View Only)',
-        [label2, label3],
-        'Maria',
-        '2024-11-20T08:15:00Z',
-        'Maria',
-        '2025-01-10T16:45:00Z',
-        'Shared by Maria - view only access',
-        false,
-        'viewer',
-      ),
-      ...Array.from({ length: 46 }, (_, i) => {
-        const id = i + 13;
-        const titles: [string, ...string[]] = [
-          'Project Planning',
-          'Marketing Strategy',
-          'Product Roadmap',
-          'Meeting Notes',
-          'Brainstorming Session',
-          'Technical Documentation',
-          'Budget Review',
-          'Team Organization',
-          'Client Presentation',
-          'Research Findings',
-          'Sprint Planning',
-          'Architecture Design',
-          'User Stories',
-          'Feature Requirements',
-          'Bug Tracking',
-          'Release Planning',
-          'Training Materials',
-          'Process Workflow',
-          'Sales Pipeline',
-          'Customer Journey',
-          'Content Calendar',
-          'SEO Strategy',
-          'Social Media Plan',
-          'Event Planning',
-          'Performance Metrics',
-          'Risk Assessment',
-          'Competitor Analysis',
-          'SWOT Analysis',
-          'Goal Setting',
-          'Time Management',
-          'Resource Allocation',
-          'Cost Analysis',
-          'Quality Assurance',
-          'Security Audit',
-          'Data Migration',
-          'API Documentation',
-          'Mobile App Design',
-          'Web Dashboard',
-          'Analytics Review',
-          'Customer Feedback',
-          'Product Backlog',
-          'Technical Debt',
-          'Innovation Ideas',
-          'Partnership Strategy',
-          'Vendor Evaluation',
-          'Compliance Checklist',
-        ];
-        const creators: [string, ...string[]] = ['Paulo', 'Maria', 'John', 'Sarah', 'Mike', 'Anna'];
-        const labelSets: [Label[], ...Label[][]] = [
-          [],
-          [label1],
-          [label2],
-          [label3],
-          [label1, label2],
-          [label2, label3],
-        ];
-        const roles: ['owner' | 'editor' | 'viewer', ...('owner' | 'editor' | 'viewer')[]] = [
-          'owner',
-          'owner',
-          'owner',
-          'editor',
-          'viewer',
-        ];
-
-        return createMapInfo(
-          id,
-          i % 7 === 0, // Some starred
-          cycle(titles, i) + ` ${Math.floor(i / titles.length) + 1}`,
-          cycle(labelSets, i),
-          cycle(creators, i),
-          new Date(2024, i % 12, (i % 28) + 1, 10, 0, 0).toISOString(),
-          cycle(creators, i + 1),
-          new Date(2025, (i + 1) % 12, ((i + 5) % 28) + 1, 14 + (i % 8), 30, 0).toISOString(),
-          `Description for ${cycle(titles, i)}`,
-          i % 5 === 0, // Some public
-          cycle(roles, i),
-        );
-      }),
     ];
 
     this.labels = [label1, label2, label3];
@@ -239,9 +130,10 @@ class MockClient implements Client {
   }
 
   fetchMapMetadata(id: number, includeXml = false): Promise<MapMetadata> {
+    const map = this.maps.find((m) => m.id === id);
     const metadata: MapMetadata = {
-      title: 'my map',
-      creatorFullName: 'The Map Creator',
+      title: map ? map.title : (id === 10 ? '8.1、非标设计常用附件的选型' : 'my map'),
+      creatorFullName: map ? map.createdBy : '我',
       id: id,
       isLocked: false,
       jsonProps: '{ "zoom": 0.8 }',
@@ -250,9 +142,19 @@ class MockClient implements Client {
 
     // Include mock XML if requested
     if (includeXml) {
-      metadata.xml = `<map name="${id}" version="tango">
-        <topic central="true" text="Mock Map ${id}" id="1" fontStyle=";;#ffffff;;;"></topic>
+      const customXml =
+        this.customXmlByMapId.get(id) ||
+        (typeof window !== 'undefined' && window.localStorage?.getItem(`mock-map-${id}-xml`));
+
+      if (customXml && customXml.includes('<map') && customXml.includes('<topic')) {
+        metadata.xml = customXml;
+      } else if (id === 1 || id === 10) {
+        metadata.xml = exampleMap;
+      } else {
+        metadata.xml = `<map name="${id}" version="tango" layout="mindmap">
+        <topic central="true" text="${metadata.title}" id="1" fontStyle=";;#ffffff;;;"></topic>
       </map>`;
+      }
     }
 
     return Promise.resolve(metadata);
@@ -332,8 +234,33 @@ class MockClient implements Client {
   }
 
   importMap(model: ImportMapInfo): Promise<number> {
-    log.debug('model:' + model);
-    return Promise.resolve(10);
+    log.debug('importMap called with model:' + model);
+    const newId = this.maps.length > 0 ? Math.max(...this.maps.map((m) => m.id)) + 1 : 10;
+    const now = new Date().toISOString();
+    const newMap: MapInfo = {
+      id: newId,
+      title: model.title || '导入的思维导图',
+      description: model.description || '',
+      labels: [],
+      createdBy: '我',
+      creationTime: now,
+      lastModificationBy: '我',
+      lastModificationTime: now,
+      starred: true,
+      public: false,
+      role: 'owner',
+    };
+    this.maps.unshift(newMap);
+
+    const xml = typeof model.content === 'string' ? model.content : '';
+    if (xml) {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        window.localStorage.setItem(`mock-map-${newId}-xml`, xml);
+      }
+      this.customXmlByMapId.set(newId, xml);
+    }
+
+    return Promise.resolve(newId);
   }
 
   fetchAccountInfo(): Promise<AccountInfo> {

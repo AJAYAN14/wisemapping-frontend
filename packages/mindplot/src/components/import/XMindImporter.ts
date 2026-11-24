@@ -428,22 +428,19 @@ class XMindImporter extends Importer {
 
   private mapStructureClassToLayout(structureClass?: string): LayoutType | undefined {
     if (!structureClass) {
-      return undefined;
+      return 'mindmap';
     }
 
     const normalized = structureClass.toLowerCase();
 
-    const treeIndicators = ['org-chart', 'tree', 'timeline', 'logic', 'fishbone', 'matrix'];
+    // Only purely vertical organizational structures should map to vertical 'tree'
+    const treeIndicators = ['org-chart', 'tree-down', 'structure-down'];
     if (treeIndicators.some((indicator) => normalized.includes(indicator))) {
       return 'tree';
     }
 
-    const mindmapIndicators = ['map', 'mindmap'];
-    if (mindmapIndicators.some((indicator) => normalized.includes(indicator))) {
-      return 'mindmap';
-    }
-
-    return undefined;
+    // Default all horizontal logic diagrams, mindmaps, and other structures to 'mindmap'
+    return 'mindmap';
   }
 
   private async detectInput(): Promise<DetectedInput> {
@@ -647,7 +644,7 @@ class XMindImporter extends Importer {
     const topic = mindmap.createNode('MainTopic', this.ids.next());
     this.topicIdMap.set(xmindTopicId, topic.getId());
     topic.setText(title);
-    topic.setShapeType('line');
+    topic.setShapeType('rounded rectangle');
     return topic;
   }
 
